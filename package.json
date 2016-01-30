@@ -1,0 +1,45 @@
+{
+  "name": "remi-timeout",
+  "version": "0.0.0",
+  "description": "Registration timeout hook for remi",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/{**/,/}*.js",
+    "coverage": "istanbul cover _mocha test/{**/,/}*.js -- -R spec",
+    "precoveralls": "istanbul cover _mocha test/{**/,/}*.js --report lcovonly -- -R spec && npm i coveralls@2",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "postcoveralls": "rm -rf ./coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remijs/timeout"
+  },
+  "keywords": [
+    "remi",
+    "timeout",
+    "hook"
+  ],
+  "author": {
+    "name": "Zoltan Kochan",
+    "email": "zoltan.kochan@gmail.com",
+    "url": "http://kochan.io"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/remijs/timeout/issues"
+  },
+  "homepage": "https://github.com/remijs/timeout#readme",
+  "dependencies": {
+    "kamikaze": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.3.4",
+    "plugiator": "^0.1.1",
+    "remi": "^0.5.0"
+  }
+}
