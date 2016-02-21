@@ -19,6 +19,7 @@
   },
   "keywords": [
     "remi",
+    "remi-extension",
     "timeout",
     "hook"
   ],
@@ -32,6 +33,9 @@
     "url": "https://github.com/remijs/remi-timeout/issues"
   },
   "homepage": "https://github.com/remijs/remi-timeout#readme",
+  "peerDependencies": {
+    "remi": "1.x.x"
+  },
   "dependencies": {
     "kamikaze": "^1.0.0"
   },
@@ -40,6 +44,6 @@
     "istanbul": "^0.4.2",
     "mocha": "^2.3.4",
     "plugiator": "^0.1.1",
-    "remi": "^0.5.0"
+    "remi": "1.x.x"
   }
 }
