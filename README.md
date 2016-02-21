@@ -21,7 +21,7 @@ npm install remi-timeout
 const remi = require('remi')
 const remiTimeout = require('remi-timeout')
 
-let registrator = remi({})
+const registrator = remi({})
 
 registrator.hook(remiTimeout(1000))
 
@@ -38,4 +38,4 @@ plugin.attributes = { name: 'plugin' }
 
 ## License
 
-MIT © [Zoltan Kochan](https://github.com/zkochan)
+MIT © [Zoltan Kochan](https://www.kochan.io)
