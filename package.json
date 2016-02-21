@@ -37,7 +37,7 @@
     "remi": "1.x.x"
   },
   "dependencies": {
-    "kamikaze": "^1.0.0"
+    "kamikaze": "^1.1.0"
   },
   "devDependencies": {
     "chai": "^3.4.1",
