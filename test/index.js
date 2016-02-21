@@ -5,9 +5,13 @@ const remiTimeout = require('..')
 const plugiator = require('plugiator')
 
 describe('remi-timeout', function() {
-  it('should throw error if one the plugins didn\'t finished registering in time', function(done) {
-    let registrator = remi({})
+  let registrator
 
+  beforeEach(() => {
+    registrator = remi({})
+  })
+
+  it('should throw error if one the plugins didn\'t finished registering in time', function(done) {
     registrator.hook(remiTimeout(10))
 
     registrator
@@ -21,8 +25,6 @@ describe('remi-timeout', function() {
   })
 
   it('should not throw error if plugin finished registering in time', function() {
-    let registrator = remi({})
-
     registrator.hook(remiTimeout(100))
 
     return registrator.register({ register: plugiator.noop() })
