@@ -1,5 +1,7 @@
 # remi-timeout
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/remijs/remi-timeout.svg)](https://greenkeeper.io/)
+
 Registration timeout hook for remi
 
 [![Dependency Status](https://david-dm.org/remijs/remi-timeout/status.svg?style=flat)](https://david-dm.org/remijs/remi-timeout)
